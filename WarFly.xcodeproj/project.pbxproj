@@ -13,6 +13,7 @@
 		8A5F2806292B965900219A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F2804292B965900219A1D /* Main.storyboard */; };
 		8A5F2808292B965A00219A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F2807292B965A00219A1D /* Assets.xcassets */; };
 		8A5F280B292B965A00219A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F2809292B965A00219A1D /* LaunchScreen.storyboard */; };
+		8A5F2812292B9D7B00219A1D /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2811292B9D7B00219A1D /* Background.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		8A5F2805292B965900219A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A5F2807292B965A00219A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A5F280A292B965A00219A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A5F2811292B9D7B00219A1D /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				8A5F27FA292B965900219A1D /* AppDelegate.swift */,
 				8A5F2800292B965900219A1D /* GameScene.swift */,
+				8A5F2811292B9D7B00219A1D /* Background.swift */,
 				8A5F2802292B965900219A1D /* GameViewController.swift */,
 				8A5F2804292B965900219A1D /* Main.storyboard */,
 				8A5F2807292B965A00219A1D /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 				8A5F2801292B965900219A1D /* GameScene.swift in Sources */,
 				8A5F2803292B965900219A1D /* GameViewController.swift in Sources */,
 				8A5F27FB292B965900219A1D /* AppDelegate.swift in Sources */,
+				8A5F2812292B9D7B00219A1D /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
