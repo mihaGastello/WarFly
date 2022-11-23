@@ -16,6 +16,15 @@ class GameScene: SKScene {
         let background = Background.populateBackground(at: screenCenterPoint)
         background.size = self.size
         self.addChild(background)
+        
+        let screen = UIScreen.main.bounds
+        for _ in 1...5 {
+            let x: CGFloat = CGFloat(GKRandomSource.sharedRandom().nextInt(upperBound: Int(screen.size.width)))
+            let y: CGFloat = CGFloat(GKRandomSource.sharedRandom().nextInt(upperBound: Int(screen.size.height)))
+        
+            let island = Island.populateIsland(at: CGPoint(x: x, y: y))
+            self.addChild(island)
+        }
     }
         
 }
