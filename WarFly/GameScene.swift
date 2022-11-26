@@ -10,6 +10,8 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    var player: SKSpriteNode!
+    
     override func didMove(to view: SKView) {
         
         let screenCenterPoint = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
@@ -28,6 +30,9 @@ class GameScene: SKScene {
             let cloud = Cloud.populateSprite(at: CGPoint(x: x, y: y))
             self.addChild(cloud)
         }
+        
+        player = PlayerPlane.populate(at: CGPoint(x: screen.size.width / 2, y: 100))
+        self.addChild(player)
     }
         
 }
