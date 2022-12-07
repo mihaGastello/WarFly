@@ -15,6 +15,7 @@
 		8A5F280B292B965A00219A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A5F2809292B965A00219A1D /* LaunchScreen.storyboard */; };
 		8A5F2812292B9D7B00219A1D /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5F2811292B9D7B00219A1D /* Background.swift */; };
 		8A8F3535292DE5FD00A493F5 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F3534292DE5FD00A493F5 /* Island.swift */; };
+		8AD54FAA293374F400326AB4 /* protocol GameBackgroundSpritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD54FA9293374F400326AB4 /* protocol GameBackgroundSpritable.swift */; };
 		8AF1F854292F3A3700910D22 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1F853292F3A3700910D22 /* Cloud.swift */; };
 		8AF1F856293210F700910D22 /* PlayerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1F855293210F700910D22 /* PlayerPlane.swift */; };
 		8AF1F8582932121B00910D22 /* PlayerPlane.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8AF1F8572932121B00910D22 /* PlayerPlane.atlas */; };
@@ -30,6 +31,7 @@
 		8A5F280A292B965A00219A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A5F2811292B9D7B00219A1D /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		8A8F3534292DE5FD00A493F5 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		8AD54FA9293374F400326AB4 /* protocol GameBackgroundSpritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "protocol GameBackgroundSpritable.swift"; sourceTree = "<group>"; };
 		8AF1F853292F3A3700910D22 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		8AF1F855293210F700910D22 /* PlayerPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPlane.swift; sourceTree = "<group>"; };
 		8AF1F8572932121B00910D22 /* PlayerPlane.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = PlayerPlane.atlas; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				8AF1F855293210F700910D22 /* PlayerPlane.swift */,
 				8A8F3534292DE5FD00A493F5 /* Island.swift */,
 				8AF1F853292F3A3700910D22 /* Cloud.swift */,
+				8AD54FA9293374F400326AB4 /* protocol GameBackgroundSpritable.swift */,
 				8A5F2802292B965900219A1D /* GameViewController.swift */,
 				8A5F2804292B965900219A1D /* Main.storyboard */,
 				8AF1F8572932121B00910D22 /* PlayerPlane.atlas */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD54FAA293374F400326AB4 /* protocol GameBackgroundSpritable.swift in Sources */,
 				8A5F2801292B965900219A1D /* GameScene.swift in Sources */,
 				8AF1F856293210F700910D22 /* PlayerPlane.swift in Sources */,
 				8AF1F854292F3A3700910D22 /* Cloud.swift in Sources */,

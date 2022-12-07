@@ -9,31 +9,15 @@
 import SpriteKit
 import GameplayKit
 
-protocol GameBackgroundSpriteable {
-    static func populate() -> Self
-    static func randomPoint() -> CGPoint
-}
-
-extension GameBackgroundSpriteable {
-    static func randomPoint() -> CGPoint {
-        let screen = UIScreen.main.bounds
-        let distribution = GKRandomDistribution(lowestValue: Int(screen.size.height) + 100,
-                                                highestValue: Int(screen.size.height) + 200)
-        
-        let y = CGFloat(distribution.nextInt())
-        let x = CGFloat(GKRandomSource.sharedRandom().nextInt(upperBound: Int(screen.size.width)))
-        
-        return CGPoint(x: x, y: y)
-    }
-}
-    
 final class Cloud: SKSpriteNode, GameBackgroundSpriteable {
-    static func populate() -> Cloud {
+    static func populate(at point: CGPoint?) -> Cloud {
         let cloudImageName = configureName()
         let cloud = Cloud(imageNamed: cloudImageName)
         cloud.setScale(randomScaleFactor)
-        cloud.position = randomPoint()
+        cloud.position = point ?? randomPoint()
         cloud.zPosition = 10
+        cloud.name = "backgroundSprite"
+        cloud.anchorPoint = CGPoint(x: 0.5, y: 1.0)
         cloud.run(move(from: cloud.position))
         
         return cloud

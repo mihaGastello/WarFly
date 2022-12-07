@@ -17,8 +17,35 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         configureStartScene()
+        spawnClouds()
+        spawnIslands()
     }
+      
+    fileprivate func spawnClouds() {
+        let spawnCloudWait = SKAction.wait(forDuration: 1)
+        let spawnCloudAction = SKAction.run {
+            let cloud = Cloud.populate(at: nil)
+            self .addChild(cloud)
+        }
         
+        let spawnCloudSequence = SKAction.sequence([spawnCloudWait, spawnCloudAction])
+        let spawnCloudForever = SKAction.repeatForever(spawnCloudSequence)
+        run(spawnCloudForever)
+    }
+    
+    fileprivate func spawnIslands() {
+        let spawnIslandWait = SKAction.wait(forDuration: 2)
+        let spawnIslandAction = SKAction.run {
+            let island = Island.populate(at: nil)
+            self .addChild(island)
+        }
+        
+        let spawnIslandSequence = SKAction.sequence([spawnIslandWait, spawnIslandAction])
+        let spawnIslandForever = SKAction.repeatForever(spawnIslandSequence)
+        run(spawnIslandForever)
+    }
+    
+    
     fileprivate func configureStartScene() {
         
         let screenCenterPoint = CGPoint(x: self.size.width / 2, y: self.size.height / 2)
@@ -56,6 +83,13 @@ class GameScene: SKScene {
         } else if player.position.x > self.size.width + 70 {
             player.position.x = -70
         }
+        enumerateChildNodes(withName: "backgroundSprite") { (node, stop) in
+            if node.position.y < -200 {
+                node.removeFromParent()
+            }
+        }
+        
+        
     }
     
 }
